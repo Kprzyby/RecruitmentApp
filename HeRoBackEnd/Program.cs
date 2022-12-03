@@ -68,9 +68,11 @@ try
     builder.Services.AddCors(options => options.AddPolicy("corspolicy", build =>
     {
         build
+        .WithOrigins("https://localhost:3000", "http://localhost:3000")
+        .SetIsOriginAllowedToAllowWildcardSubdomains()
         .AllowAnyMethod()
         .AllowAnyHeader()
-        .AllowAnyOrigin()
+        .AllowCredentials()
         .Build();
     }));
 
