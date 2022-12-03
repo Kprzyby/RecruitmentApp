@@ -65,7 +65,7 @@ namespace Services.Services
                 recruitment.RecruiterId = dto.RecruiterId;
                 recruitment.LastUpdatedDate = dto.LastUpdatedDate;
                 recruitment.RecruitmentPosition = dto.RecruitmentPosition;
-                recruitment.Localization = dto.RecruitmentPosition;
+                recruitment.Localization = dto.Localization;
                 recruitment.Seniority = dto.Seniority;
                 recruitment.IsPublic = dto.IsPublic;
 
