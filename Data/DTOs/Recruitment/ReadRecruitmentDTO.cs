@@ -6,6 +6,7 @@
         public string Name { get; set; }
         public DateTime BeginningDate { get; set; }
         public DateTime EndingDate { get; set; }
+        public DateTime? EndedDate { get; set; }
         public string Description { get; set; }
         public string Creator { get; set; }
         public string RecruitmentPosition { get; set; }

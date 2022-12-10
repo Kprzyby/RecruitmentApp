@@ -65,7 +65,7 @@ namespace Services.Services
                 recruitment.RecruiterId = dto.RecruiterId;
                 recruitment.LastUpdatedDate = dto.LastUpdatedDate;
                 recruitment.RecruitmentPosition = dto.RecruitmentPosition;
-                recruitment.Localization = dto.RecruitmentPosition;
+                recruitment.Localization = dto.Localization;
                 recruitment.Seniority = dto.Seniority;
                 recruitment.IsPublic = dto.IsPublic;
 
@@ -244,6 +244,7 @@ namespace Services.Services
                 BeginningDate = x.BeginningDate,
                 EndingDate = x.EndingDate,
                 Description = x.Description,
+                EndedDate = x.EndedDate,
                 Localization = x.Localization,
                 Creator = $"{x.CreatedBy.Name} {x.CreatedBy.Surname}",
                 RecruitmentPosition = x.RecruitmentPosition,
